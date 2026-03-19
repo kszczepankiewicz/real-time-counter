@@ -3,8 +3,6 @@ const MAX_LENGTH = 49;
 const textInput = document.getElementById('text-input');
 const charCount = document.getElementById('char-count');
 
-textInput.setAttribute('maxlength', MAX_LENGTH);
-
 const updateCharCount = () => {
     const value = textInput.value;
     const length = value.length;
