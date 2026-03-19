@@ -1,4 +1,4 @@
-const MAX_LENGTH = 49;
+const MAX_LENGTH = 50;
 
 const textInput = document.getElementById('text-input');
 const charCount = document.getElementById('char-count');
