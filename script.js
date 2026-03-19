@@ -5,8 +5,8 @@ textInput.setAttribute('maxlength', MAX_LENGTH);
 const charCount = document.getElementById('char-count');
 charCount.textContent = `Character Count: ${textInput.value.length}/${MAX_LENGTH}`;
 
-textInput.addEventListener('input', (e) => {
-    const value = e.target.value;
+textInput.addEventListener('input', ({ target }) => {
+    const value = target.value;
     const length = value.length;
     charCount.classList.toggle('limit', length === MAX_LENGTH);
     charCount.textContent = `Character Count: ${length}/${MAX_LENGTH}`;
